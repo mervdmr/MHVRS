@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteriner Hekim Randevu Sistemi</title>
+    <link rel="stylesheet" href="uyelikekran.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <div class="logo-container">
+                <img src="MHVRS.png" alt="Merkezi Veteriner Hekim Logo" class="logo">
+            </div>
+            <h2>Hesap oluştur</h2>
+            <p>Zaten hesabınız var mı? <a href="#">Giriş yap</a></p>
+            <form>
+                <div class="form-group">
+                    <label for="isim">İsim</label>
+                    <input type="text" id="isim" name="isim">
+                </div>
+                <div class="form-group">
+                    <label for="soyisim">Soyisim</label>
+                    <input type="text" id="soyisim" name="soyisim">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="sifre">Şifre</label>
+                    <input type="password" id="sifre" name="sifre">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-sifre">Parolayı doğrulayın</label>
+                    <input type="password" id="confirm-sifre" name="confirm-sifre">
+                </div>
+                <p>Harf, rakam ve simgelerin karışımından oluşan 8 veya daha fazla karakter kullanın</p>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="show-password">
+                    <label for="show-password">Şifreyi gizle</label>
+                </div>
+                <button type="submit" class="btn">Giriş Yap</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="randev.png" alt="Veteriner Background" class="background-image">
+           
+              
+            </div>
+        </div>
+    </div>
+
+    <script src="uyelikekran.js"></script>
+</body>
+</html>

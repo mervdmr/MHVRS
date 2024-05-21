@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Appointment System</title>
+    <link rel="stylesheet" href="randevu.css">
+</head>
+<body>
+    <header>
+        <img src="MHVRS.png" alt="Veterinary Clinic Logo" class="logo">
+        <input type="search" placeholder="Ara">
+        <button class="settings">Settings</button>
+        <button class="login">Login</button>
+    </header>
+    <main>
+        <form>
+            <h3>Zorunlu Alan</h3>
+            <label for="species">* Türü Seçiniz:</label>
+            <select id="species" required>
+                <option value="">Select Species</option>
+                <option value="Pet">Pet</option>
+                <option value="Kanatlı Hayvanlar">Kanatlı Hayvanlar</option>
+                <option value="Küçükbaş Hayvan">Küçükbaş Hayvan</option>
+                <option value="Büyükbaş Hayvan">Büyükbaş Hayvan</option>
+                <option value="Egzotik Hayvan">Egzotik Hayvan</option>
+            </select>
+
+            <label for="clinic">* Klinik:</label>
+            <select id="clinic" required>
+                <option value="">Select Clinic</option>
+            </select>
+
+            <label for="hospital">* Hastane:</label>
+            <select id="hospital" required>
+                <option value="">Select Hospital</option>
+            </select>
+
+            <label for="doctor">* Hekim:</label>
+            <select id="doctor" required>
+                <option value="">Select Doctor</option>
+            </select>
+
+            <label for="date">* Tarih:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Randevu Ara</button>
+            <button type="reset">Temizle</button>
+        </form>
+    </main>
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Roboto Condensed";
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.login-section {
+    flex-basis: 50%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section {
+    flex-basis: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image-section p {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    color: white;
+   
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.logo {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 20px;
+}

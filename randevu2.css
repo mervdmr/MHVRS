@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;  /* Allow this container to fill the available space */
+}
+
+.header-content img {
+    width: 150px;
+    height: 150px;
+}
+
+.search-settings {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;  /* Allow the search bar and buttons to expand */
+}
+
+.search-settings input[type="search"] {
+    flex-grow: 1;  /* Make search input expand to fill available space */
+    padding: 8px;
+    margin: 0 10px; /* Provide spacing around the search box */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-settings button {
+    padding: 8px 12px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;  /* Space between buttons */
+}
+
+.settings-button {
+    background-color: #4CAF50; /* Placeholder color for settings icon button */
+}
+
+.login-button {
+    background-color: #007BFF; /* Placeholder color for login button */
+}
+
+.info-box {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.links .button {
+    display: block;
+    width: calc(50% - 40px);
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    outline: none;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #ddd;
+    border-bottom: none;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content p {
+    margin: 0;
+}
+
+.hospital {
+    background-color: #BEB3B3;
+}
+
+.appointments {
+    background-color:  #ff4757;
+}
+.last {
+    background-color: #2ed573;
+}
+
+
+.appointments-summary {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box, .appointments-box, .map-container {
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;  /* Adjust width as needed */
+}
+
+#map {
+    width: 200%;
+    height: 300px;  /* Adjust height as needed */
+}

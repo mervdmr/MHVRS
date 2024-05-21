@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Service Dashboard</title>
+    <link rel="stylesheet" href="randevu2.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="MHVRS.png" alt="Veterinary Clinic Logo">
+            <div class="search-settings">
+                <input type="search" placeholder="...">
+                <button class="settings-button">Ayarlar</button>
+                <button class="login-button">Giriş </button>
+            </div>
+        </div>
+    </header>
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab('current')">Randevularım</button>
+        <button class="tab-button" onclick="openTab('past')">Geçmiş Randevular</button>
+    </div>
+
+    <div id="current" class="tab-content">
+        <!-- Content for current appointments -->
+        <p>Current appointment details...</p>
+    </div>
+
+    <div id="past" class="tab-content" style="display:none;">
+        <!-- Content for past appointments -->
+        <p>Past appointment details...</p>
+    </div>
+
+    <main>
+        <div class="info-box">
+            <!-- <h3>Ası Bilgisi</h3>
+            <p>Aşılar, bulaşıcı hastalıklara karşı koruma sağlar, toplum sağlığını korur ve veteriner maliyetlerini azaltarak dostlarımızın refahını artırır.</p> -->
+        </div>
+        <div class="links">
+            <button class="button hospital"> <h3>Ası Bilgisi</h3>
+                <p>Aşılar, bulaşıcı hastalıklara karşı koruma sağlar, toplum sağlığını korur ve veteriner maliyetlerini azaltarak dostlarımızın refahını artırır.</p></button>
+            <!-- <h3>Ası Bilgisi</h3>
+            <p>Aşılar, bulaşıcı hastalıklara karşı koruma sağlar, toplum sağlığını korur ve veteriner maliyetlerini azaltarak dostlarımızın refahını artırır.</p>
+            <button class="button hospital">En yakın Hastane</button> -->
+            <button class="button appointments"><h3>Randevu Oluştur
+                <p>Kayıtlı hasta için istediğiniz hekimden randevu oluştur.</p>
+            </h3></button>
+            <button class="button last"><h3>Geçmiş Randevular
+                <p>Geçmiş randevu bilgileri için tıklayın.</p>
+            </h3></button>
+        </div>
+        <div id="map" style="height: 300px;"></div> <!-- Container for the map -->
+    </div>
+    <div class="appointments-box">
+        <h3>En yakın Hastane</h3>
+    
+    </div>
+        </div>
+    </main>
+</body>
+</html>
